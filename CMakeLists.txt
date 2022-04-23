@@ -205,8 +205,8 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-add_executable(server_service src/server_service.cpp)
-target_link_libraries(server_service ${catkin_LIBRARIES})
+#add_executable(server_service src/server_service.cpp)
+#target_link_libraries(server_service ${catkin_LIBRARIES})
 
-add_executable(client_service src/client_service.cpp)
-target_link_libraries(client_service ${catkin_LIBRARIES})
+#add_executable(client_service src/client_service.cpp)
+#target_link_libraries(client_service ${catkin_LIBRARIES})
