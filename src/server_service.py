@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import rospy
 from service_example.srv import Archivo_var, Archivo_varResponse
 
