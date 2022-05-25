@@ -2,8 +2,6 @@
 import rospy
 from service_example.srv import Archivo_var
 
-valor_anterior = 0
-
 if __name__ == "__main__":
 
   rospy.init_node('service_client')
