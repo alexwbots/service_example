@@ -4,15 +4,15 @@
 
 int main(int argc, char **argv) {
 
-  ros::init(argc, argv, "service_server");
+  ros::init(argc, argv, "service_client");
   ros::NodeHandle n;
   ros::ServiceClient client = n.serviceClient<service_example::Archivo_var>("filtro");
   service_example::Archivo_var srv;
 
   std::vector<float> a(2);
 
-  a.push_back(1.0);
-  a.push_back(2.0);
+  a.push_back(23.2);
+  a.push_back(22.1);
 
   srv.request.valores = a;
   if (client.call(srv))
