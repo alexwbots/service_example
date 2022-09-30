@@ -9,7 +9,7 @@ int main(int argc, char **argv) {
   ros::ServiceClient client = n.serviceClient<service_example::Archivo_var>("filtro");
   service_example::Archivo_var srv;
 
-  std::vector<float> a(2);
+  std::vector<float> a;
 
   a.push_back(23.2);
   a.push_back(22.1);
